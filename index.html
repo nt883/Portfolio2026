@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nemadodzi Ntandoyenkosi Lutendo | Portfolio</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Font (premium feel) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        },
+        colors: {
+          accent: '#06b6d4'// purple
+        }
+      }
+    }
+  }
+</script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+
+
+<body class="bg-gradient-to-b from-black via-zinc-950 to-black text-white font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="flex justify-between items-center px-8 py-6 backdrop-blur-md bg-black/30 sticky top-0 z-50">
+
+  <h1 class="text-xl font-semibold tracking-tight">
+    <span class="text-white">Nemadodzi Ntandoyenkosi</span><span class="text-accent"> Lutendo</span>
+  </h1>
+
+  <div class="space-x-6 text-sm">
+    <a href="#home" class="hover:text-accent transition">Home</a>
+    <a href="#projects" class="hover:text-accent transition">Projects</a>
+    <a href="#about" class="hover:text-accent transition">About</a>
+    <a href="#contact" class="hover:text-accent transition">Contact</a>
+  </div>
+
+</nav>
+
+  <!-- HERO SECTION -->
+  <section id = "home"  class="px-8 py-24 max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-6 bg-gradient-to-r from-white to-accent bg-clip-text text-transparent">
+      Full-stack developer with a focus on algorithms, machine learning, and system design
+    </h2>
+    <p class="text-gray-400 text-lg mb-8">
+      Computer Science student focused on creating clean, functional, and scalable web experiences.
+    </p>
+
+    <button class="bg-accent text-black px-6 py-3 rounded-lg font-medium hover:bg-cyan-400 transition duration-300 shadow-md hover:shadow-xl">
+  View Projects
+</button>
+  </section>
+
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-accent/10 blur-[120px] rounded-full"></div>
+
+<!-- FEATURED PROJECT -->
+<section class="px-8 py-24 max-w-6xl mx-auto">
+
+  <h3 class="text-3xl font-semibold mb-10">
+    <span class="text-white">Featured</span> <span class="text-accent">Project</span>
+  </h3>
+
+  <div class="bg-zinc-900/80 border border-zinc-800 rounded-2xl overflow-hidden 
+  grid md:grid-cols-2 hover:border-accent transition duration-300">
+
+    <!-- IMAGE AREA -->
+    <div class="h-64 md:h-auto bg-zinc-800"></div>
+
+    <!-- CONTENT -->
+    <div class="p-8 flex flex-col justify-center">
+
+      <h4 class="text-2xl font-semibold mb-4">
+        Food ordering app
+        
+      </h4>
+
+      <p class="text-gray-400 mb-6">
+
+        A mobile application for ordering food, that was part of a school project , worked with 3 other students to build the app, we used Android Studio for the front-end and SQL database for the back-end, the app allows users to browse through a menu, and place orders. 
+        
+      </p>
+
+      <p class="text-gray-500 text-sm mb-6">
+        Android Studio • Java • SQL • php
+      </p>
+
+      <div class="flex gap-4 text-sm">
+        <a href="https://drive.google.com/file/d/14ZBnEizpzHHvRCfvwGRNZoL5Q47eEDIy/view?usp=sharing"
+   target="_blank"
+   class="border border-zinc-700 px-4 py-2 rounded-lg hover:border-accent hover:text-accent transition">
+   Demo Video
+</a>
+
+        
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- PROJECTS SECTION -->
+<section id="projects" class="px-8 py-24 max-w-6xl mx-auto">
+  
+  <h3 class="text-3xl font-semibold mb-12">
+  <span class="text-white">More</span> <span class="text-accent">Work</span>
+</h3>
+
+  <div class="grid md:grid-cols-2 gap-10">
+
+    <!-- PROJECT CARD 1 -->
+    <div class="bg-zinc-900/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-6 
+hover:scale-[1.02] hover:border-accent transition duration-300">
+<img 
+  src="images/image.png" 
+  alt="Car Parts Catalogue Website"
+  class="h-48 w-full object-cover rounded-lg mb-6"
+/>
+      
+
+  
+
+      <h4 class="text-xl font-semibold mb-2">
+        Car parts catalogue website
+      </h4>
+
+      <p class="text-gray-400 text-sm mb-4">
+        A font-end application that allows users to browse and search for car parts.
+      </p>
+
+      <p class="text-gray-500 text-xs mb-4">
+        HTML • CSS • JavaScript 
+      </p>
+
+      <div class="flex space-x-4 text-sm">
+        <a href="https://nt883.github.io/auto-spares-web-app/" target="_blank"
+          class="bg-accent text-black px-4 py-2 rounded-lg hover:bg-cyan-400 transition">
+          Live Demo
+        </a>
+
+        <a href="https://github.com/nt883/auto-spares-web-app" target="_blank"
+          class="border border-zinc-700 px-4 py-2 rounded-lg hover:border-accent hover:text-accent transition">
+          GitHub
+        </a>
+
+      </div>
+    </div>
+
+    <!-- PROJECT CARD 2 -->
+    <div class="bg-zinc-900/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-6 
+hover:scale-[1.02] hover:border-accent transition duration-300">
+    <img 
+  src="images/Screenshot_12-5-2026_3290_127.0.0.1.jpeg" 
+  alt="Car Parts Catalogue Website"
+  class="h-48 w-full object-cover rounded-lg mb-6"
+/>
+      
+
+      <h4 class="text-xl font-semibold mb-2">
+        Algorithm Visualizer
+      </h4>
+
+      <p class="text-gray-400 text-sm mb-4">
+        Interactive visualization of sorting and pathfinding algorithms to demonstrate performance and behavior.........more algorithms coming soon!
+      </p>
+
+      <p class="text-gray-500 text-xs mb-4">
+        JavaScript • Data Structures • Algorithms
+      </p>
+
+      <div class="flex space-x-4 text-sm">
+        <a href="https://nt883.github.io/Algorithm-Visualizer/" class="bg-accent text-black px-4 py-2 rounded-lg hover:bg-cyan-400 transition">
+          Live Demo
+        </a>
+
+        <a href="https://github.com/nt883/Algorithm-Visualizer" class="border border-zinc-700 px-4 py-2 rounded-lg hover:border-accent hover:text-accent transition">
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!------Project card 3----->  
+      <div class="bg-zinc-900/80 backdrop-blur-sm border border-zinc-800 rounded-2xl p-6 
+hover:scale-[1.02] hover:border-accent transition duration-300">
+    <img 
+  src="images/snake_game.png" 
+  alt="Car Parts Catalogue Website"
+  class="h-48 w-full object-cover rounded-lg mb-6"
+/>
+      
+
+      <h4 class="text-xl font-semibold mb-2">
+        Snake Game - pathfinding algorithms
+      </h4>
+
+      <p class="text-gray-400 text-sm mb-4">
+        A snake game that uses pathfinding algorithms to navigate the snake towards the apple while avoiding collisions with itself, the wall and other snakes. The game demonstrates the use of algorithms like A* and Dijkstra's to find the optimal path for the snake to reach the apple while maximizing its length and avoiding obstacles.
+      </p>
+
+      <p class="text-gray-500 text-xs mb-4">
+        JavaScript • Data Structures • Algorithms
+      </p>
+
+      <div class="flex space-x-4 text-sm">
+        <a href="https://drive.google.com/file/d/1Q9Nuqjfy3f5xbkNgv_WDrHjTYi6fr_8y/view?usp=sharing" class="bg-accent text-black px-4 py-2 rounded-lg hover:bg-cyan-400 transition">
+          Live Demo
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="border-t border-zinc-800 max-w-6xl mx-auto"></div>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="px-8 py-24 max-w-6xl mx-auto">
+
+  <div class="grid md:grid-cols-2 gap-16 items-start">
+
+    <!-- ABOUT TEXT -->
+    <div>
+      <h3 class="text-3xl font-semibold mb-6">About Me</h3>
+
+      <p class="text-gray-400 mb-4">
+        I'm a Computer Science student with a strong interest in building efficient, scalable, and intelligent systems.
+      </p>
+
+      <p class="text-gray-400 mb-4">
+        My work spans web development, algorithms, and system-level thinking — combining practical applications with deeper computational concepts.
+      </p>
+
+      <p class="text-gray-400">
+        Currently exploring areas like machine learning, parallel computing, and software design.
+      </p>
+    </div>
+
+    <!-- SKILLS -->
+    <div>
+      <h3 class="text-3xl font-semibold mb-6">Skills</h3>
+
+      <div class="space-y-6">
+
+        <div>
+      
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">HTML</span>
+            <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">CSS</span>
+            <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">JavaScript</span>
+            <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">Python</span>
+              <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">Java</span>
+              <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">SQL</span>
+              <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">php</span>
+              <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">Android Studio</span>
+
+              
+
+          </div>
+        </div>
+
+        <div>
+          <p class="text-sm text-gray-500 mb-2">Backend</p>
+          
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">Supabase</span>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-sm text-gray-500 mb-2">Computer Science</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">Advanced Analysis of Algorithms</span>
+            <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">Computer Graphics and Visualization</span>
+            <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">Machine Learning</span>
+            <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">Parallel Computing</span>
+            <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">Software Design</span>
+            <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">Finite Language and Automata</span>
+            <span class="bg-zinc-800/80 border border-zinc-700 px-3 py-1 rounded-full text-sm hover:border-accent transition">Operating Systems and Systems Programming</span> 
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<div class="border-t border-zinc-800 max-w-6xl mx-auto"></div>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact"class="px-8 py-24 max-w-4xl mx-auto text-center">
+
+  <h3 class="text-3xl font-semibold mb-6">Get In Touch</h3>
+
+  <p class="text-gray-400 mb-8">
+    I'm open to opportunities, collaborations, or just a quick chat. Feel free to reach out.
+  </p>
+
+  <div class="flex justify-center gap-6 text-sm">
+
+<a href="mailto:2812316@students.wits.ac.za"
+    class="bg-accent text-black px-5 py-2 rounded-lg hover:bg-cyan-400 transition shadow-md hover:shadow-lg">
+    School Email
+</a>
+
+<a href="mailto:nemadodzintandoyenkosi4@gmail.com"
+    class="bg-accent text-black px-5 py-2 rounded-lg hover:bg-cyan-400 transition shadow-md hover:shadow-lg">
+    Personal Email      
+</a>
+
+    <a href="https://www.linkedin.com/in/lutendo-nemadodzi-78440240a?utm_source=share_via&utm_content=profile&utm_medium=member_ios" class="border border-zinc-700 px-5 py-2 rounded-lg hover:border-accent hover:text-accent transition">
+      LinkedIn
+    </a>
+
+    <a href="https://github.com/nt883" class="border border-zinc-700 px-5 py-2 rounded-lg hover:border-accent hover:text-accent transition">
+      GitHub
+    </a>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-zinc-800 px-8 py-6 text-center text-gray-500 text-sm">
+  © 2026 Nemadodzi Ntandoyenkosi Lutendo. All rights reserved.
+</footer>
+
+</body>
+</html>
