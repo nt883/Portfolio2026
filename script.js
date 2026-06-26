@@ -1,5 +1,5 @@
 // ── TYPEWRITER ──
-const words = ["Ntando", "a CS student.", "a backend builder.", "a frontend builder.", "an ML enthusiast."];
+const words = ["Ntando.", "a CS student.", "a backend builder.", "a frontend builder.", "an ML enthusiast."];
 let wordIndex = 0, charIndex = 0, deleting = false;
 const el = document.getElementById('typewriter');
 
