@@ -425,3 +425,173 @@ footer span { color: var(--accent); }
   .projects-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
 }
+
+
+/* ── TECH GRID ── */
+.tech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.tech-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  transition: border-color 0.2s, color 0.2s;
+}
+.tech-badge:hover { border-color: var(--accent); color: var(--text); }
+
+.tb-icon {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: -0.02em;
+}
+
+/* ── CONTACT CARDS ── */
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.contact-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: border-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+.contact-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.1);
+}
+
+.contact-card-icon {
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+.contact-card-icon svg { width: 26px; height: 26px; }
+
+.contact-card-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text);
+  font-family: 'Fira Code', monospace;
+}
+
+.contact-card-handle {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-family: 'Fira Code', monospace;
+  word-break: break-all;
+  text-align: center;
+}
+
+.contact-card-cta {
+  font-size: 0.75rem;
+  color: var(--accent);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .contact-cards { grid-template-columns: 1fr; }
+  .tech-grid { grid-template-columns: 1fr; }
+}
+
+/* ── TECH STACK ── */
+.stack-groups {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.stack-group {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.75rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.stack-group:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.stack-group::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+}
+.sg1::before { background: #06b6d4; }
+.sg2::before { background: #3b82f6; }
+.sg3::before { background: #a855f7; }
+
+.stack-group-title {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+.sg1 .stack-group-title { color: #06b6d4; }
+.sg2 .stack-group-title { color: #3b82f6; }
+.sg3 .stack-group-title { color: #a855f7; }
+
+.stack-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.stack-items li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.82rem;
+  color: #94a3b8;
+  transition: color 0.2s;
+}
+.stack-items li:hover { color: var(--text); }
+
+.stack-items li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.sg1 .stack-items li::before { background: rgba(6,182,212,0.6); }
+.sg2 .stack-items li::before { background: rgba(59,130,246,0.6); }
+.sg3 .stack-items li::before { background: rgba(168,85,247,0.6); }
+
+@media (max-width: 768px) {
+  .stack-groups { grid-template-columns: 1fr; }
+}
